@@ -61,6 +61,9 @@
                                 <state key="normal" title="冒険に行く" backgroundImage="gold_button.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="toBattle" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRm-Nm-LkF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVW-OD-cc1">
                                 <rect key="frame" x="20" y="145" width="48" height="24"/>
@@ -74,7 +77,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <segue destination="7Uf-sK-Qh8" kind="presentation" modalTransitionStyle="crossDissolve" id="aQb-k7-6eC"/>
+                        <outlet property="nameLabel" destination="zVW-OD-cc1" id="kET-Ru-eYE"/>
+                        <outlet property="staminaLabel" destination="4QM-Wn-5xp" id="OFy-fI-6AC"/>
+                        <segue destination="7Uf-sK-Qh8" kind="presentation" identifier="toBattle" modalTransitionStyle="crossDissolve" id="HMH-M5-fIk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -210,6 +215,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
                                 <state key="normal" title="こうげき" backgroundImage="gold_button.png"/>
+                                <connections>
+                                    <action selector="attackAction" destination="7Uf-sK-Qh8" eventType="touchUpInside" id="ndn-2Q-NdA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDS-hg-Bek">
                                 <rect key="frame" x="279" y="739" width="115" height="76"/>
@@ -221,6 +229,16 @@
                         <viewLayoutGuide key="safeArea" id="86J-Dk-LjN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="enemyHPLabel" destination="OoJ-kP-Ao1" id="tyD-ko-mKO"/>
+                        <outlet property="enemyImageView" destination="Jme-bD-6yq" id="gt7-u5-Ogo"/>
+                        <outlet property="enemyMPLabel" destination="sfM-WW-Qts" id="odw-Ra-PBY"/>
+                        <outlet property="enemyNameLabel" destination="XtK-JI-vzv" id="klK-dG-hQs"/>
+                        <outlet property="playerHPLable" destination="pJr-I3-l4Y" id="JD7-Za-gb2"/>
+                        <outlet property="playerImageView" destination="deL-Kt-sVg" id="yq4-3j-roJ"/>
+                        <outlet property="playerMPLabel" destination="vsG-eV-r8G" id="fKH-Jp-zrz"/>
+                        <outlet property="playerNameLabel" destination="aOf-nX-SzW" id="soU-Fa-MZJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zo-Fe-ibG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
