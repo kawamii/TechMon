@@ -209,6 +209,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
                                 <state key="normal" title="ファイア" backgroundImage="gold_button.png"/>
+                                <connections>
+                                    <action selector="fireAction" destination="7Uf-sK-Qh8" eventType="touchUpInside" id="nlC-uc-FBb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaO-et-cUf">
                                 <rect key="frame" x="20" y="739" width="115" height="76"/>
@@ -224,6 +227,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
                                 <state key="normal" title="ためる" backgroundImage="gold_button.png"/>
+                                <connections>
+                                    <action selector="tameruAction" destination="7Uf-sK-Qh8" eventType="touchUpInside" id="ZIA-QL-yd2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="86J-Dk-LjN"/>
@@ -234,10 +240,11 @@
                         <outlet property="enemyImageView" destination="Jme-bD-6yq" id="gt7-u5-Ogo"/>
                         <outlet property="enemyMPLabel" destination="sfM-WW-Qts" id="odw-Ra-PBY"/>
                         <outlet property="enemyNameLabel" destination="XtK-JI-vzv" id="klK-dG-hQs"/>
-                        <outlet property="playerHPLable" destination="pJr-I3-l4Y" id="JD7-Za-gb2"/>
+                        <outlet property="playerHPLabel" destination="pJr-I3-l4Y" id="DQf-F1-RXA"/>
                         <outlet property="playerImageView" destination="deL-Kt-sVg" id="yq4-3j-roJ"/>
                         <outlet property="playerMPLabel" destination="vsG-eV-r8G" id="fKH-Jp-zrz"/>
                         <outlet property="playerNameLabel" destination="aOf-nX-SzW" id="soU-Fa-MZJ"/>
+                        <outlet property="playerTPLabel" destination="3oc-hw-PrF" id="op7-Le-5w7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zo-Fe-ibG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

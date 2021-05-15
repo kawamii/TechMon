@@ -14,6 +14,8 @@ class LobbyViewController: UIViewController {
     
     let techMonManager = TechMonManager.shared
     
+    
+    
     var stamina: Int = 100
     var staminaTimer: Timer!
 
